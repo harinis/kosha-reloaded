@@ -1,0 +1,8 @@
+class Session
+  def initialize(files)
+    files.each do |file|
+      @student_track = file if file.path =~ /student/
+      @teacher_track = file if file.path =~ /student/
+    end
+  end
+end

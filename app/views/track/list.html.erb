@@ -1,0 +1,10 @@
+<% @files.each do |dir, files| %>
+    <div>
+        <%= dir %>
+        <ul>
+            <% files.each do |file| %>
+                <li><a href="music.mp3"><%= file %></a></li>
+            <% end %>
+        </ul>
+    </div>
+<% end %>

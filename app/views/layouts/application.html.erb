@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kosha</title>
+    <%= stylesheet_link_tag :all %>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
+</head>
+<body>
+<object width="200" height="20" data="/player_mp3_maxi.swf">
+    <param name="movie" value="/player_mp3_maxi.swf">
+    <param name="FlashVars" value="mp3=/music.mp3&amp;showstop=1&amp;showvolume=1&amp;bgcolor1=189ca8&amp;bgcolor2=085c68">
+</object>
+
+<a href="http://localhost:3000/music.mp3"> music.mp3 </a>
+<html>
+    <head>
+      <title>My Great Website</title>
+    </head>
+    <body>
+      <div id="fb-root"></div>
+      <script src="http://connect.facebook.net/en_US/all.js">
+      </script>
+      <script>
+         FB.init({
+            appId:'196460620389447', cookie:true,
+            status:true, xfbml:true
+         });
+
+         FB.ui({ method: 'feed',
+            message: 'Facebook for Websites is super-cool'});
+      </script>
+     </body>
+ </html>
+
+<%= yield %>
+
+</body>
+</html>

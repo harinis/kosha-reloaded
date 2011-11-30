@@ -1,0 +1,389 @@
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 11 11:41:13 +0530 2011
+  Processing by TrackController#index as HTML
+Redirected to http://www.dropbox.com/0/oauth/authorize?oauth_token=ax15ce82vi2d8eg&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2F
+Completed 302 Found in 645ms
+
+
+Started GET "/?uid=21313224&oauth_token=ax15ce82vi2d8eg" for 127.0.0.1 at Mon Apr 11 11:41:17 +0530 2011
+  Processing by TrackController#index as HTML
+  Parameters: {"uid"=>"21313224", "oauth_token"=>"ax15ce82vi2d8eg"}
+Redirected to 
+Completed   in 1134ms
+
+ActionController::RoutingError (No route matches {:controller=>"track", :action=>"list"}):
+  app/controllers/track_controller.rb:11:in `index'
+
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/?uid=21313224&oauth_token=ax15ce82vi2d8eg" for 127.0.0.1 at Mon Apr 11 11:42:11 +0530 2011
+  Processing by TrackController#index as HTML
+  Parameters: {"uid"=>"21313224", "oauth_token"=>"ax15ce82vi2d8eg"}
+Completed   in 1090ms
+
+OAuth::Unauthorized (403 Forbidden):
+  app/controllers/track_controller.rb:8:in `index'
+
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 11 11:42:38 +0530 2011
+  Processing by TrackController#index as HTML
+Redirected to http://www.dropbox.com/0/oauth/authorize?oauth_token=xg89hd48mxs8ehh&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2F
+Completed 302 Found in 572ms
+
+
+Started GET "/?uid=21313224&oauth_token=xg89hd48mxs8ehh" for 127.0.0.1 at Mon Apr 11 11:42:40 +0530 2011
+  Processing by TrackController#index as HTML
+  Parameters: {"uid"=>"21313224", "oauth_token"=>"xg89hd48mxs8ehh"}
+Redirected to http://localhost:3000/track/list
+Completed 302 Found in 1121ms
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 11:42:41 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered text template (0.0ms)
+Completed 200 OK in 51ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 11 11:54:53 +0530 2011
+  Processing by TrackController#index as HTML
+Redirected to http://www.dropbox.com/0/oauth/authorize?oauth_token=q2xal816wr6lg1f&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2F
+Completed 302 Found in 564ms
+
+
+Started GET "/?uid=21313224&oauth_token=q2xal816wr6lg1f" for 127.0.0.1 at Mon Apr 11 11:54:55 +0530 2011
+  Processing by TrackController#index as HTML
+  Parameters: {"uid"=>"21313224", "oauth_token"=>"q2xal816wr6lg1f"}
+Redirected to http://localhost:3000/track/list
+Completed 302 Found in 1103ms
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 11:54:56 +0530 2011
+  Processing by TrackController#list as HTML
+Completed   in 1375ms
+
+Dropbox::UnsuccessfulResponseError (HTTP status Net::HTTPBadRequest received: http://api.dropbox.com/0/metadata/sandbox/dropbox/music-classes?list=true):
+  app/controllers/track_controller.rb:22:in `list'
+
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.8ms)
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.8ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 11:58:56 +0530 2011
+  Processing by TrackController#list as HTML
+Completed   in 1230ms
+
+Dropbox::UnsuccessfulResponseError (HTTP status Net::HTTPBadRequest received: http://api.dropbox.com/0/metadata/sandbox/music-classes?list=true):
+  app/controllers/track_controller.rb:22:in `list'
+
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (54.8ms)
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (59.8ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 12:03:26 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered text template (0.0ms)
+Completed 200 OK in 1387ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 12:23:57 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered text template (0.0ms)
+Completed 200 OK in 1337ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 12:27:01 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered text template (0.0ms)
+Completed 200 OK in 3563ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 12:32:49 +0530 2011
+  Processing by TrackController#list as HTML
+Completed   in 2109ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]=):
+  app/controllers/track_controller.rb:23:in `list'
+  app/controllers/track_controller.rb:22:in `each'
+  app/controllers/track_controller.rb:22:in `list'
+
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.8ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 12:33:47 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (41.7ms)
+Completed   in 3674ms
+
+ActionView::Template::Error (undefined method `path' for "/music-classes/07-04-2011":String):
+    1: <% @files.each do |dir, files| %>
+    2:     <div>
+    3:         <%= dir.path %>
+    4:         <ul>
+    5:             <% files.each do |file| %>
+    6:                 <li><%= file.path%></li>
+  app/views/track/list.html.erb:3:in `_app_views_track_list_html_erb__1211813164_2174208700_0'
+  app/views/track/list.html.erb:1:in `each'
+  app/views/track/list.html.erb:1:in `_app_views_track_list_html_erb__1211813164_2174208700_0'
+
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (19.3ms)
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.1ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 12:35:20 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 3515ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 12:39:25 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 3380ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 11 12:39:37 +0530 2011
+  Processing by TrackController#index as HTML
+Redirected to http://www.dropbox.com/0/oauth/authorize?oauth_token=8mird5597tq2lev&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2F
+Completed 302 Found in 582ms
+
+
+Started GET "/?uid=21313224&oauth_token=8mird5597tq2lev" for 127.0.0.1 at Mon Apr 11 12:40:31 +0530 2011
+  Processing by TrackController#index as HTML
+  Parameters: {"uid"=>"21313224", "oauth_token"=>"8mird5597tq2lev"}
+Redirected to http://localhost:3000/track/list
+Completed 302 Found in 1158ms
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 12:40:32 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 3369ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 14:16:02 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 5073ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 14:17:36 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 3299ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 14:17:47 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 3301ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 14:18:54 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 3420ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 14:21:43 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 3419ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/file.mp3" for 127.0.0.1 at Mon Apr 11 14:21:57 +0530 2011
+
+ActionController::RoutingError (No route matches "/track/file.mp3"):
+  
+
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 14:23:09 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 3421ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 14:26:05 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 3473ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/music.mp3" for 127.0.0.1 at Mon Apr 11 14:26:18 +0530 2011
+
+ActionController::RoutingError (No route matches "/track/music.mp3"):
+  
+
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 11 14:26:31 +0530 2011
+  Processing by TrackController#index as HTML
+Redirected to http://www.dropbox.com/0/oauth/authorize?oauth_token=c2pxhjv3x62z6rg&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2F
+Completed 302 Found in 672ms
+
+
+Started GET "/?uid=21313224&oauth_token=c2pxhjv3x62z6rg" for 127.0.0.1 at Mon Apr 11 14:26:34 +0530 2011
+  Processing by TrackController#index as HTML
+  Parameters: {"uid"=>"21313224", "oauth_token"=>"c2pxhjv3x62z6rg"}
+Redirected to http://localhost:3000/track/list
+Completed 302 Found in 1280ms
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 14:26:35 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 3374ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/public" for 127.0.0.1 at Mon Apr 11 14:26:44 +0530 2011
+
+ActionController::RoutingError (No route matches "/public"):
+  
+
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 11 14:28:18 +0530 2011
+  Processing by TrackController#index as HTML
+Redirected to http://www.dropbox.com/0/oauth/authorize?oauth_token=ncx28wv7tu2q21o&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2F
+Completed 302 Found in 636ms
+
+
+Started GET "/?uid=21313224&oauth_token=ncx28wv7tu2q21o" for 127.0.0.1 at Mon Apr 11 14:28:20 +0530 2011
+  Processing by TrackController#index as HTML
+  Parameters: {"uid"=>"21313224", "oauth_token"=>"ncx28wv7tu2q21o"}
+Redirected to http://localhost:3000/track/list
+Completed 302 Found in 1384ms
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 14:28:22 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 3400ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 14:31:05 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 3406ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/music.mp3" for 127.0.0.1 at Mon Apr 11 14:31:17 +0530 2011
+
+ActionController::RoutingError (No route matches "/track/music.mp3"):
+  
+
+Rendered /Users/Harini/.rvm/gems/ruby-1.8.7-p330/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 14:31:38 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 3524ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 14:35:21 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 3476ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 14:35:40 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 3625ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 14:36:00 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 3433ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Mon Apr 11 14:36:55 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 3457ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Apr 13 16:35:53 +0530 2011
+  Processing by TrackController#index as HTML
+Redirected to http://www.dropbox.com/0/oauth/authorize?oauth_token=hvwg627yl6md9aw&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2F
+Completed 302 Found in 1183ms
+
+
+Started GET "/?uid=21313224&oauth_token=hvwg627yl6md9aw" for 127.0.0.1 at Wed Apr 13 16:36:01 +0530 2011
+  Processing by TrackController#index as HTML
+  Parameters: {"uid"=>"21313224", "oauth_token"=>"hvwg627yl6md9aw"}
+Redirected to http://localhost:3000/track/list
+Completed 302 Found in 1530ms
+
+
+Started GET "/track/list" for 127.0.0.1 at Wed Apr 13 16:36:03 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 6735ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Wed Apr 13 16:38:19 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 4649ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Wed Apr 13 16:58:27 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 4348ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Thu Apr 14 09:51:32 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 3514ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Thu Apr 14 09:51:45 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 3305ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/track/list" for 127.0.0.1 at Thu Apr 14 09:53:04 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 4403ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 15 12:24:04 +0530 2011
+  Processing by TrackController#index as HTML
+Redirected to http://www.dropbox.com/0/oauth/authorize?oauth_token=7uno8pk4w3qfj6b&oauth_callback=http%3A%2F%2Flocalhost%3A3000%2F
+Completed 302 Found in 695ms
+
+
+Started GET "/?uid=21313224&oauth_token=7uno8pk4w3qfj6b" for 127.0.0.1 at Fri Apr 15 12:24:07 +0530 2011
+  Processing by TrackController#index as HTML
+  Parameters: {"uid"=>"21313224", "oauth_token"=>"7uno8pk4w3qfj6b"}
+Redirected to http://localhost:3000/track/list
+Completed 302 Found in 1102ms
+
+
+Started GET "/track/list" for 127.0.0.1 at Fri Apr 15 12:24:08 +0530 2011
+  Processing by TrackController#list as HTML
+Rendered track/list.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 3543ms (Views: 45.0ms | ActiveRecord: 0.0ms)
